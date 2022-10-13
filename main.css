@@ -3,36 +3,112 @@ body {
     flex-direction: column;
     width:100vw;
     height:100vw;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    background-image: url("goldpic.jpeg");
+    background-repeat: no-repeat;
+    background-size: 200%,10%;
+    background-color: black;
 }
 h1 {
     width:100%;
     font-size: 50px;
+    background-image: url("money.jpg");
+    border-radius: 50px;
+    padding:10px;
+    border: 1px solid black;
+    color: gold;
+    outline: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px #000000;
+    border:1px solid black;
+    box-shadow: 2px 2px gold;
 }
 #instructions {
     text-align: center;
-    font-size: 23px;
+    text-justify: center;
+    font-size: 26pt;
+    border:1px solid black;
+    border-radius: 50px;
+    background-image: url("money.jpg");
+    width:50%;
+    height: 30%;
+    margin-left: 25%;
+    padding-bottom: -10px;
+    color: gold;
+    outline: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px #000000;
+    border:1px solid black;
+    box-shadow: 2px 2px gold;
 }
-#response {}
+#response {
+    text-align: center;
+    text-justify: center;
+    font-size: 25px;
+    /* border:1px solid black; */
+    border-radius: 50px;
+    background-image: url("money.jpg");
+    width:30vw;
+    padding-bottom: -10px;
+    color: gold;
+    outline: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px #000000;
+    font-size: 18pt;
+    border:1px solid black;
+    box-shadow: 2px 2px gold;
+}
 #guessInput {
     margin-bottom: 20px;
-    width:200px;
+    align-content: center;
+    margin-left: 15%;
+    width:20vw;
     height:200px;
     border-radius: 150px;
     font-size: 55pt;
     text-align: center;
+    background-image: url("money.jpg");
+    box-shadow: 2px 2px gold;
+}
+#guessInput::placeholder {
+    font-size: 50%;
+    color: gold;
+    outline: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px #000000
+    
+
 }
 #submit{
     width:150px;
     height:50px;
+    margin-top: 10px;
     border-radius: 50px;
+    background-image: url("money.jpg");
+    font-size: 18pt;
+    color: gold;
+    outline: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px #000000;
+    box-shadow: 2px 2px ;
 }
 #guessList{
     list-style: none;
     text-align: center;
     margin-right: 30px;
     font-size: 24pt;
+    color: gold;
+    outline: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px #000000;
+    
     
 }
 #guessList li{
@@ -41,14 +117,32 @@ h1 {
     padding: 10px;
     border: 2px solid black;
     border-radius: 25px;
+    background-image: url("money.jpg");
+    box-shadow: 2px 2px ;
 }
 #hint {
     width:150px;
     height:50px;
     border-radius: 50px;
+    background-image: url("money.jpg");
+    color: gold;
+    outline: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px #000000;
+    font-size: 18pt;
+    box-shadow: 2px 2px ;
 }
 #reset {
     width:150px;
     height:50px;
     border-radius: 50px;
+    background-image: url("money.jpg");
+    color: gold;
+    outline: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px #000000;
+    font-size:18pt;
+    box-shadow: 2px 2px ;
 }
