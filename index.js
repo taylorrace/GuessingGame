@@ -28,7 +28,7 @@ const submitGuess = document.getElementById("submit");
         pastGuesses.push(userInput.value);
         userInput.value = "";
         response.textContent = "You overshot! Guess lower.";
-         
+        
     } else if (userInput.value < randomNum){
         pastGuesses.push(userInput.value);
         userInput.value = "";
