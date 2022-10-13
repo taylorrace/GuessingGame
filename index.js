@@ -1,6 +1,5 @@
 
    let randomNum = Math.floor(Math.random() * 100 + 1);
-   console.log(randomNum)
 
     let pastGuesses = [];
     function checkGuesses (){
@@ -13,6 +12,7 @@
 // This sequence occurs when the submit button is clicked
 const submitGuess = document.getElementById("submit");
     submitGuess.addEventListener("click", function(){
+    
     let userInput = document.getElementById("guessInput");
     
     if(userInput.value == randomNum){
@@ -23,6 +23,8 @@ const submitGuess = document.getElementById("submit");
         submitGuess.disabled = true;
         document.getElementById("hint").disabled = true;
        
+    } else if (userInput.value < 1 || userInput.value > 100) {
+        response.textContent = "Not a valid guess.";
     } else if (userInput.value > randomNum){
         pastGuesses.push(userInput.value);
         userInput.value = "";
@@ -32,16 +34,26 @@ const submitGuess = document.getElementById("submit");
         pastGuesses.push(userInput.value);
         userInput.value = "";
         response.textContent = "Too low! Guess higher.";
-    }
+    } 
     // assign guesses to list
-    document.getElementById("guess1").innerText = pastGuesses[0];
-    document.getElementById("guess2").innerText = pastGuesses[1];
-    document.getElementById("guess3").innerText = pastGuesses[2];
-    document.getElementById("guess4").innerText = pastGuesses[3];
-    document.getElementById("guess5").innerText = pastGuesses[4];
-   
     checkGuesses();// <-- check to see if we've met 5 guesses
+    makeList(pastGuesses)
+
     });
+
+function makeList(arr){
+    let list = document.getElementById('guessList');
+    var li = document.createElement('li');
+    for(let i = 0; i < arr.length; i++){
+        li.textContent = arr[i];
+      list.appendChild(li);
+    }
+  }
+
+  const startOver = document.getElementById('reset')
+  startOver.addEventListener("click", function () {
+    location.reload();
+  });
 
     // Edge cases
     // number is outside of 1 - 100 range
