@@ -1,0 +1,54 @@
+body {
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    height:100vw;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    width:100%;
+    font-size: 50px;
+}
+#instructions {
+    text-align: center;
+    font-size: 23px;
+}
+#response {}
+#guessInput {
+    margin-bottom: 20px;
+    width:200px;
+    height:200px;
+    border-radius: 150px;
+    font-size: 55pt;
+    text-align: center;
+}
+#submit{
+    width:150px;
+    height:50px;
+    border-radius: 50px;
+}
+#guessList{
+    list-style: none;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 24pt;
+    
+}
+#guessList li{
+    display: inline;
+    margin:10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+#hint {
+    width:150px;
+    height:50px;
+    border-radius: 50px;
+}
+#reset {
+    width:150px;
+    height:50px;
+    border-radius: 50px;
+}

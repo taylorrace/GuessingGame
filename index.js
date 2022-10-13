@@ -19,7 +19,6 @@ const submitGuess = document.getElementById("submit");
         userInput.value = "";
         const response = document.getElementById("response");
         response.textContent = "Winner Winner Chicken Dinner!"
-        
         submitGuess.disabled = true;
         document.getElementById("hint").disabled = true;
        
