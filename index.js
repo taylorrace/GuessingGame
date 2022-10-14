@@ -20,6 +20,7 @@ submitGuess.addEventListener("click", function () {
     response.textContent = "Winner Winner Chicken Dinner!";
     submitGuess.disabled = true;
     document.getElementById("hint").disabled = true;
+    return;
   } else if (userInput.value < 1 || userInput.value > 100) {
     response.textContent = "Not a valid guess.";
   } else if (userInput.value > randomNum) {

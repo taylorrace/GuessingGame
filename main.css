@@ -71,6 +71,9 @@ h1 {
     text-align: center;
     background-image: url("money.jpg");
     box-shadow: 2px 2px gold;
+    color:gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 #guessInput::placeholder {
     font-size: 50%;
