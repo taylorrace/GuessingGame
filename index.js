@@ -1,4 +1,6 @@
 let randomNum = Math.floor(Math.random() * 100 + 1);
+let hintrandom1 = Math.floor(Math.random() * 100 + 1);
+let hintrandom2 = Math.floor(Math.random() * 100 + 1);
 
 let pastGuesses = [];
 function checkGuesses() {
@@ -23,6 +25,7 @@ submitGuess.addEventListener("click", function () {
     return;
   } else if (userInput.value < 1 || userInput.value > 100) {
     response.textContent = "Not a valid guess.";
+    return;
   } else if (userInput.value > randomNum) {
     pastGuesses.push(userInput.value);
     userInput.value = "";
@@ -45,6 +48,12 @@ function makeList(arr) {
     list.appendChild(li);
   }
 }
+
+const hintclick = document.getElementById("hint");
+hint.addEventListener("click", function (){
+  response.textContent = `One of these is your answer! ${randomNum}, ${hintrandom1}, ${hintrandom2}`; 
+  console.log(hintclick);
+});
 
 const startOver = document.getElementById("reset");
 startOver.addEventListener("click", function () {
